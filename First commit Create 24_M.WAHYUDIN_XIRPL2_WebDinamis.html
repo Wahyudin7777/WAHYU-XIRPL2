@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WEB INTERAKTIF SIMPEL</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js">
+    </script>
+    <style>
+       body{
+font-family: 'Times New Roman', Times, serif;
+padding: top 4px; ;
+       }
+    </style>
+</head>
+<body class=" bg-light subtle align-items-center">
+<header class="bg-info">
+    <h1 align="center">Crypter</h1>
+    <nav>
+        <ul>
+            <center>
+            <a href="solusi_trading.html" class="text-dark" >Solusi Trading </a></li>
+            <a href="tips.html" class="text-dark" >Tips</a></li>
+            <a href="trick.html" class="text-dark" >Trick</a></li>
+        </center>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<section id="home">
+       <div class="text-center">
+     <button type="button"><a href="https://siatex-v2.smktexmaco-smg.sch.id/" class="text-center">Home</a></button>
+   <h5>Klik Untuk Ke Home</h5>
+    </div>
+</section>
+<section id="about">
+    <div class="text-center">
+        <button type="button"><a href="About.html" class="text-center">About</a></button>
+ <h5>Klik Untuk Tahu Tentang kami</h5>
+    </div>
+</section>
+
+<section id="Daftar">
+    <div class="text-center">
+        <div class="container mt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                daftar
+            </button>
+        </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Daftar user</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                    <div class="modal-body">
+                        <form id="modalForm">
+                            <div class="form-floating mt-4 mb-3">
+                                <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama..." required>
+                                <label for="nama">Nama</label>
+                            </div>
+                            <div class="form-floating mt-4 mb-3">
+                                <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Alamat..." required>
+                                <label for="alamat">Alamat</label>
+                            </div>
+                            <div class="form-floating mt-4 mb-3">
+                                <input type="number" name="telepon" id="telepon" class="form-control" placeholder="Telepon..." required pattern="\d{9,13}">
+                                <label for="telepon">Telepon</label>
+                                <div class="invalid-feedback">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
+                                <input type="date" name="tanggal_lahir" id="tanggal_lahir" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Gender</label>
+                                <div>
+                                    <input type="radio" name="gender" id="gender1" class="form-check-input" value="Laki-laki">
+                                    <label for="gender1" class="form-check-label">Laki-laki</label>
+                                    <input type="radio" name="gender" id="gender2" class="form-check-input" value="Perempuan">
+                                    <label for="gender2" class="form-check-label">Perempuan</label>
+                                    <input type="radio" name="gender" id="gender3" class="form-check-input" value="Animal">
+                                    <label for="gender3" class="form-check-label">Animal</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="agama" class="form-label">Agama</label>
+                                <select name="agama" id="agama" class="form-select" >
+                                    <option value="islam">Islam</option>
+                                    <option value="kristen">Kristen</option>
+                                    <option value="hindu">Hindu</option>
+                                    <option value="budha">Budha</option>
+                                    <option value="konghucu">Konghucu</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--modal footer-->
+                <div class="modal-footer">
+                    <!--untuk cancel dengan code data-bs-dismiss -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"id="saveChangesBtn">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<footer class="bg-info fixed-bottom">
+    <!-- <div class="container">
+        <div class="d-flex justify-content-center"> -->
+            <div class="text-center">
+                <p class="mt-2 text-center">© 2024 Web Dinamis Interaktif</p>
+            </div>
+        <!-- </div> -->
+    <!-- </div> -->
+</footer>
+
+        <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
